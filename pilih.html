@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Siapa Impostornya?</title>
+      <style>
+        body {
+          font-family: 'Poppins', sans-serif;
+          text-align: center;
+          background-image: url('/bg.png');
+          background-size: 510px;
+          padding: 50px;
+        }
+        .bg {
+          font-family: 'Poppins', sans-serif;
+          background-color: #34beff;
+          color: white;
+          margin-top: 100px;
+          margin-left: -20px;
+          font-size: 8px;
+          text-align: center;
+          padding: 10px;
+          width: 270px;
+          height: 330px;
+          border-radius: 30px 30px 30px 30px;
+          box-shadow: 0px 4px 8px rgba(0,0,0,1));
+        }
+        .image {
+          border-radius: 5px 5px 5px 5px;
+          width: 130px;
+          height: 130px;
+          justify-content: space-between;
+          box-shadow: 0px 4px 8px rgba(0,0,0,1));
+        }
+        .image:active {
+          transform: scale(1.15);
+          transition: transform 0.2s ease;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="bg">
+        <h1>Cari siapa impostornya (click pada gambar)</h1>
+        <img src="gA.png" class="image" onclick="window.location.href='benar.html'">
+        <img src="gB.png" class="image" onclick="window.location.href='salah.html'">
+        <img src="gC.png" class="image" onclick="window.location.href='salah.html'">
+        <img src="gD.png" class="image" onclick="window.location.href='salah.html'">
+      </div>
+    </body>
+</html>

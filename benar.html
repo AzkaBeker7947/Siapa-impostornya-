@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siapa Impostornya?</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-image: url('/bg.png');
+            background-size: 510px;
+            padding: 50px;
+        }
+        .bg {
+            background-color: #34beff;
+            color: white;
+            padding: 30px;
+            margin-top: 100px;
+            margin-left: -20px;
+            font-size: 8px;
+            border-radius: 30px;
+            text-align: center;
+            padding: 10px;
+            width: 270px;
+            height: 270px;
+            inline-block;
+        }
+        .image {
+            border-radius: 5px;
+            width: 200px;
+            height: 200px;
+            justify-content: space-between;
+        }
+        body.keluar {
+            opacity: 0;
+            transition: opacity 4s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <h1>Kamu Pasti Milih Ini Karena Dia Cantik</h1>
+        <img src="gA.png" class="image">
+    </div>
+    <script>
+        window.onload = setTimeout(function() {
+            document.body.classList.add('keluar');
+            setTimeout(() => {
+                window.location.href = 'pesan.html';
+            }, 4000);
+        }, 3000);
+    </script>
+</body>
+</html>

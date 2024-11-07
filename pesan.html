@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You :)</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-image: url('/bg.png');
+            background-size: 510px;
+            padding: 50px;
+        }
+        .bg {
+            background-color: #34beff;
+            color: white;
+            padding: 30px;
+            margin-top: 100px;
+            margin-left: -20px;
+            border-radius: 30px 30px 30px 30px;
+            font-size: 10px;
+            text-align: center;
+            padding: 10px;
+            width: 270px;
+            height: 310px;
+            display: inline-block;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 1));
+            animation: pudar 20s ease;
+        }
+        .image {
+          border-radius: 5px 5px 5px 5px;
+          width: 200px;
+          height: 250px;
+          justify-content: space-between;
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 1));
+        }
+        .stiker {
+          border-radius: 5px 5px 5px 5px;
+          position: relative;
+          width: 150px;
+          height: 150px;
+          justify-content: center;
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 1));
+        }
+        @keyframes pudar {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 100;
+          }
+        }
+        .heart {
+          width: 90px;
+          height: 90px;
+          background-color: red;
+          position: relative;
+          transform: rotate(-135deg);
+          animation: heartbeat 1s infinite alternate;
+        }
+        .heart:before, .heart:after {
+          content: '';
+          position: absolute;
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          background-color: red;
+        }
+
+        .heart:before {
+          left: 50px;
+          top: 0;
+        }
+        .heart:after {
+          left: 0;
+          top: 50px;
+        }
+        @keyframes heartbeat {
+        0% {
+          transform: scale(1) rotate(-135deg);
+        }
+        50% {
+          transform: scale(1.2) rotate(-135deg);
+        }
+        100% {
+          transform: scale(1) rotate(-135deg); 
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="bg">
+      <h1>Kaya Kamu :3</h1>
+      <audio autoplay="true" hidden="true">
+        <source src="bukan.ogg" type="audio/ogg">
+      </audio>
+      <img src="gZ.png" class="image">
+      <div class="heart" style="top: -120%; left: 80%; scale: 0.7; rotate: 22deg;"></div>
+      <div class="heart" style="top: -100%; left: -20%; scale: 0.5; rotate: -22deg;"></div>
+      <div class="heart" style="top: -100%; left: 85%; scale: 0.4; rotate: 22deg;"></div>
+      <img src="sA.png" class="stiker" style="scale: 1.7; top: 25%;"></img>
+      <img src="sB.png" class="stiker" style="top: -280%; left: -40%; scale: 0.8; rotate: -22deg"></img>
+    </div>
+</body>
+</html>
